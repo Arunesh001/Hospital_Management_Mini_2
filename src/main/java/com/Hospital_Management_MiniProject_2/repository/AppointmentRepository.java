@@ -4,7 +4,7 @@ import com.Hospital_Management_MiniProject_2.entity.Appointment;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+
 
 
 @Repository

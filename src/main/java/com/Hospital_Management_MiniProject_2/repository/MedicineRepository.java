@@ -4,10 +4,10 @@ import com.Hospital_Management_MiniProject_2.entity.Medicine;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+
 
 @Repository
 public interface MedicineRepository extends MongoRepository<Medicine,String> {
 
-    List<Medicine> findByPatientId(String patientId);
+
 }

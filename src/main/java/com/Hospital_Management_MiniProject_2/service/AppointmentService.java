@@ -2,7 +2,6 @@ package com.Hospital_Management_MiniProject_2.service;
 
 import com.Hospital_Management_MiniProject_2.entity.Appointment;
 import com.Hospital_Management_MiniProject_2.entity.Doctor;
-import com.Hospital_Management_MiniProject_2.entity.Medicine;
 import com.Hospital_Management_MiniProject_2.entity.Patient;
 import com.Hospital_Management_MiniProject_2.exception.ResourceNotFoundException;
 import com.Hospital_Management_MiniProject_2.repository.AppointmentRepository;
@@ -12,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 @Service
