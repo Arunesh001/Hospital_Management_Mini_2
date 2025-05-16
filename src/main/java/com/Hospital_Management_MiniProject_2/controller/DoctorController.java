@@ -29,19 +29,19 @@ public class DoctorController {
         List<Patient> allPatient= patientService.getAllPatients();
         model.addAttribute("doctors", allDoctors);
         model.addAttribute("patients",allPatient);
-        return "/doctors/list";
+        return "doctors/list";
     }
 
     @GetMapping("/add")
     public String showCreateForm(Model model) {
         model.addAttribute("doctor", new Doctor());
-        return "/doctors/add-doctor";
+        return "doctors/add-doctor";
     }
     @GetMapping("/viewdoctor/{id}")
     public String viewDoctor(@PathVariable String id, Model model) {
         Doctor doctor = doctorService.getDoctorById(id);
         model.addAttribute("doctor",doctor);
-        return "/doctors/view";
+        return "doctors/view";
     }
 
     @PostMapping("/add")
