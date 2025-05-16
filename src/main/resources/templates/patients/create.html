@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/create.css">
 </head>
 <body>
-<div th:replace="/navbar :: navbar"></div><br><br>
+<div th:replace="~{navbar :: navbar}"></div>
+<br><br>
 <h1>Register Patient</h1>
 
 <form th:action="@{/create}" th:object="${patient}" method="post">

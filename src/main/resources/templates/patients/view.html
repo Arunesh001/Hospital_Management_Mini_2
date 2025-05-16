@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/view-patient.css">
 </head>
 <body>
-<div th:replace="/navbar :: navbar"></div><br><br>
+<div th:replace="~{navbar :: navbar}"></div>
+<br><br>
 <h1>Patient Details:-</h1>
 
 <p><strong>Name:</strong> <span th:text="${patient.name}"></span></p>
