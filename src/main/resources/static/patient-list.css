@@ -23,8 +23,8 @@ a:hover {
 }
 
 table {
-  width: 90%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto 40px auto;
   border-collapse: collapse;
   background-color: white;

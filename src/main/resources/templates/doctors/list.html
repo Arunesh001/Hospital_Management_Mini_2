@@ -45,7 +45,7 @@
         <td>
           <button type="submit" >Book</button>
           <a th:href="@{/viewdoctor/{id}(id=${doc.id})}">View Doctor</a>
-          <a th:href="@{/doctor/delete/{id}(id=${doc.id})}">Delete</a>
+          <a th:href="@{/doctor/delete/{id}(id=${doc.id})}" onclick="return confirm('Delete?')">Delete</a>
 
         </td>
 
